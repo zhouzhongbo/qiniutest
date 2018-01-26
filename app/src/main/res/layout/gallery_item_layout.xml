@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/update_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_below="@id/update_progress"
+        android:id="@+id/img_des"
+        android:src="@mipmap/take_position"
+        android:layout_width="250dp"
+        android:layout_height="250dp" />
+
+    <ImageView
+        android:layout_alignTop="@id/img_des"
+        android:layout_alignRight="@id/img_des"
+        android:layout_margin="10dp"
+        android:id="@+id/remove_button"
+        android:src="@mipmap/remove"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+</RelativeLayout>
